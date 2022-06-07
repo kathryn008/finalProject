@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     margin-top:20px;
     background: #fafafa
@@ -117,3 +118,8 @@ body{
     background-color: #fff;
     border-bottom: 1px solid #e5e9f2;
 }
+=======
+#submit-button {
+  float: right;
+}
+>>>>>>> 3d48a22290a6476da7da195b37d120e28f121934
