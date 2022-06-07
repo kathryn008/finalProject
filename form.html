@@ -1,6 +1,18 @@
 <!DOCTYPE html>
  <html>
    <head>
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"/>
+
+
     <title>Taskanize Planner App</title>
      <!--Bootstrap link:-->
      <meta charset="utf-8">
@@ -17,11 +29,8 @@
 
 <!-- Navbar Component -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#"
-    ><img
-      src="https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/logo.png"
-      alt="Adhoc logo"
-  /></a>
+  <a class="navbar-brand" href="#">
+    <img src="./whiteLogoTaskganize.png" alt="Taskganize logo"/></a>
   <button
     class="navbar-toggler"
     type="button"
@@ -29,17 +38,15 @@
     data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent"
     aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+    </span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#"
-          >Home <span class="sr-only">(current)</span></a
-        >
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">About us</a>
@@ -50,7 +57,7 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Contact us</a>
       </li>
-      <!-- <li class="nav-item dropdown">
+      <li class="nav-item dropdown"> 
       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Dropdown
       </a>
@@ -60,15 +67,15 @@
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="#">Something else here</a>
       </div>
-    </li> -->
-      <!-- <li class="nav-item">
+    </li>
+      <li class="nav-item">
       <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </li> -->
+    </li>
     </ul>
-    <!-- <form class="form-inline my-2 my-lg-0">
+    <form class="form-inline my-2 my-lg-0">
     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form> -->
+  </form>
   </div>
 </nav>
 
@@ -77,25 +84,28 @@
      <main>
        <!--Beginning of form-->
       <form class="mx-auto mt-5" style="width: 70%" >
-        <h3>Add a new task:</h3>
+        <h3>Add new task:</h3>
         <hr>
 
-        <div class="form-group">
+        <div class="form-group mt-4">
           <label for="formGroupExampleInput">Name of New Task:</label>
           <input type="text" class="form-control" id="formGroupExampleInput" placeholder="eg. Create initial wireframes">
         </div>
 
-        <div class="form-group">
+        <div class="form-group mt-4">
           <label for="formGroupExampleInput2">Task Assigned to:</label>
           <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="eg. Sarah Smith">
         </div>
 
         <!--add date picker here-->
+        <div class="mt-4">
         <label for="start">Due date:</label>
         <input type="date" id="deadline" name="dueDate" value="2022-06-22" min="2022-06-01" max="2023-12-31">
+        </form>
+        <div>
 
         <!--Dropdown input-->
-        <select class="custom-select">
+        <select class="custom-select mt-4">
           <option selected>Current Status of Task</option>
           <option value="1">To Do</option>
           <option value="2">In Progress</option>
@@ -104,14 +114,27 @@
         </select>
 
         <!--textarea input-->
-        <div class="form-group">
+        <div class="form-group mt-4">
           <label for="exampleFormControlTextarea1">Details:</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Please add here any helpful additional information about the task:""></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Please add here any helpful additional information about the task:"></textarea>
         </div>
 
         <!-- submit / clear buttons section:-->
-        <button type="button" class="btn btn-outline-danger">Clear Form</button>
-        <button type="button" class="btn btn-primary btn-lg">Add Task</button>
+        <div class="mt-4">
+          <!-- <div class="row">
+            <div class="col-8"> -->
+              <button type="button" class="btn btn-outline-danger">Clear Form</button>
+              <button type="button" class="btn btn-outline-danger">Cancel</button>
+            <!-- </div> -->
+            <!-- <div class="col-4"> -->
+              <button id="submit-button" type="button" class="btn btn-primary btn-lg">Add Task</button>
+            <!-- </div> -->
+          <!-- </div> -->
+        </div>
+
+        <!-- test Kiana-->
+
+
 
         <!--end of form-->
       </form>
