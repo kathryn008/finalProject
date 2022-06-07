@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <title>Task list</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="./whiteLogoTaskganize.png" alt="Taskganize logo"/></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">New Task</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Edit Task</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Task List</a>
+            </li>
+          </li>
+      
+          </ul>
+        </div>
+    </nav>
+    <div class="task-list-table">
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="order-button">
+            order by
+            </button>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">DueDate</a></li>
+            <li><a class="dropdown-item" href="#">AssignedTo</a></li>
+            <li><a class="dropdown-item" href="#">Status</a></li>
+            <li><hr class="dropdown-divider"></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="filter-button">
+            Filter by
+            </button>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">DueTo</a></li>
+            <li><a class="dropdown-item" href="#">Assigned To</a></li>
+            <li><a class="dropdown-item" href="#">Status</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <button type="button" class="btn btn-primary" id="search-button">Search</button>
+
+        <div>
+            <table class="table table-bordered" id="table">
+                <thead>
+                <tr>
+                    <th scope="col">Rows</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Assyned To</th>
+                    <th scope="col">Duedate</th>
+                    <th scope="col">status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Add Buttom</td>
+                    <td>Add Buttom in user page</td>
+                    <td>Kiana</td>
+                    <td>20/06/2022</td>
+                    <td>open</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Add user</td>
+                    <td>Add new user</td>
+                    <td>Kathryn</td>
+                    <td>15/06/2022</td>
+                    <td>to doing</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>update logo</td>
+                    <td>Update logo in Home page</td>
+                    <td>Oksana</td>
+                    <td>01/06/2022</td>
+                    <td>done</td>
+                </tr>
+                
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
